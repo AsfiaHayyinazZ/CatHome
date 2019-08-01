@@ -47,7 +47,7 @@ public class DetailKucing extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ModelKucing modelKucing = dataSnapshot.getValue(ModelKucing.class);
-                txt_nama.setText(modelKucing.getNama());
+                txt_nama.setText(modelKucing.gegit tNama());
                 txt_deskripsi.setText(modelKucing.getDeskripsi());
 
                 Glide.with(getBaseContext()).load(modelKucing.getGambar()).into(img_kucing);
